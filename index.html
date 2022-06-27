@@ -44,7 +44,7 @@
     <main>
         <section class="hero">
             <h1 class="hero-text">Эффективные решения для вашего бизнеса</h1>
-            <button type="button" class="hero-btn">Заказать услугу</button>
+            <button type="button" class="hero-btn" data-modal-open>Заказать услугу</button>
         </section>
         <section class="features section">
             <div class="container">
@@ -93,9 +93,18 @@
             <div class="container">
                 <h2 class="section-title">Чем мы занимаемся</h2>
                 <ul class="work-list list">
-                    <li class="work-list-item"><img src="./images/img.jpg" alt="Верстка" width="370" height="294"></li>
-                    <li class="work-list-item"><img src="./images/img1.jpg" alt="Дизайн" width="370" height="294"></li>
-                    <li class="work-list-item"><img src="./images/img2.jpg" alt="Внешнее оформление" width="370" height="294"></li>
+                    <li class="work-list-item">
+                        <img src="./images/img.jpg" alt="Верстка" width="370" height="294">
+                        <p class="work-list-caption">Десктопные приложения</p>
+                    </li>
+                    <li class="work-list-item">
+                        <img src="./images/img1.jpg" alt="Дизайн" width="370" height="294">
+                        <p class="work-list-caption">Мобильные приложения</p>
+                    </li>
+                    <li class="work-list-item">
+                        <img src="./images/img2.jpg" alt="Внешнее оформление" width="370" height="294">
+                        <p class="work-list-caption">Дизайнерские решения</p>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -353,6 +362,16 @@
             </div>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close-btn" data-modal-close>
+                <svg class="close-btn-icon" width="18" height="18">
+                    <use href="./images/symbol-defs.svg#close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
