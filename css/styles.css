@@ -231,8 +231,10 @@
         position: absolute;
         bottom: 0;
         width: 100%;
-        padding-top: 27px;
-        padding-bottom: 27px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         font-weight: 700;
         font-size: 14px;
@@ -303,7 +305,7 @@
         color: var(--main-icon-color);
         align-items: center;
         justify-content: center;
-        transition-property: color background-color;
+        transition-property: color, background-color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
    }
@@ -335,7 +337,7 @@
         color: var(--main-icon-color);
         justify-content: center;
         align-items: center;
-        transition-property: color border-color;
+        transition-property: color, border-color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -433,7 +435,7 @@
         color: var(--main-text-color);
         cursor: pointer;
         padding: 6px 22px;
-        transition-property: background-color color;
+        transition-property: background-color, color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
